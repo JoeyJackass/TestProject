@@ -75,13 +75,20 @@
 //     alert('доступ запрещен');
 // }
 
-function showPrimes(n) {
-    nextPrime: for (let i = 2; i < n; i++) {
-  
-      for (let j = 2; j < i; j++) {
-        if (i % j == 0) continue nextPrime;
-      }
-  
-      alert( i ); // простое
-    }
-  }
+
+let numberOfFilms = +prompt('сколько фильмов вы уже посмотели?', '');
+let personalMovieDB = {
+    count:{numberOfFilms},
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
+let a = prompt('один из просмотренных фильмов', '');
+let b = prompt('на сколько оцените его?', '');
+let c = prompt('один из просмотренных фильмов', '');
+let d = prompt('на сколько оцените его?', '');
+
+personalMovieDB.movies = [a] = b;
+personalMovieDB.movies = [c] = d;
+console.log(personalMovieDB);
